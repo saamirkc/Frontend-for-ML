@@ -1,14 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+///* You can add global styles to this file, and also import other style files */
+//
+//@import "bootstrap/dist/css/bootstrap.min.css";
+//@import "@fortawesome/fontawesome-free/css/all.min.css";
+//
+//.login-container{
+//  width: 800px ;
+//  margin-top: 2px;
+//  background-color: beige;
+//}
+//
+//.login-container1{
+//  width: 800px ;
+//  margin-top: 5px;
+//}
+//html,body{
+//  background-color: whitesmoke;
+//}
+//
 
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
-.login-container{
-  width: 800px ;
-  margin-top: 50px;
+html, body {
+  background-color: #EAEFF3;
 }
 
-.login-container1{
-  width: 800px ;
+.login-container {
+  width: 900px;
+  margin-top: 2px;
+  background-color: azure;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.login-container1 {
+  width: 800px;
   margin-top: 5px;
 }
+
+.navbar-light {
+  background: linear-gradient(90deg, #007BFF, #6C63FF);
+}
+
+//.alert-success {
+//  background-color: #20C997;
+//  color: white;
+//}
+//
+//.alert-danger {
+//  background-color: #DC3545;
+//  color: white;
+//}
+
+//button.btn-primary {
+//  background-color: #6C63FF;
+//  border-color: #6C63FF;
+//  color: white;
+//}
+//
+button.btn-secondary {
+  background-color: #6C63FF;
+  border-color: #6C63FF;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+button.btn-secondary:hover{
+  background-color: darkcyan;
+  transform: scale(1.05);
+}
+
+

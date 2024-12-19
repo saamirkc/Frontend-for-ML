@@ -1,10 +1,24 @@
-
+<!--<nav class="navbar-expand-lg navbar-light bg-body-secondary"style="height: 35px">-->
+<nav class="navbar-expand-lg navbar-light" style="height: 35px; background: linear-gradient(90deg, #007BFF, #6C63FF);">
+  <a class="navbar-brand" href="">
+    <i class="navbar-css fas fa-lungs"style="color: white"></i>&nbsp;
+    <span style="font-weight: bold;color: white;font-size: 20px">Pneumonia Detection And Localization Using Chest XRay</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  </button>
+    <span class="navbar-toggler-icon"></span>
+</nav>
 <div class="container-fluid card login-container" *ngIf="!message" >
-<div class="d-flex align-items-center justify-content-center mt-3">
+<div class="d-flex align-items-center justify-content-center mt-1">
   <img src="/assets/pneumonia-icon.png" alt="test" style="width: 200px; height: 150px;">
 </div>
 <div class="container text-center mt-2">
-  <h2>Upload X-ray Image</h2>
+<!--  <span style="color: blueviolet;font-weight: bold;font-size: 40px">Pneumonia Detection</span>-->
+  <span style="color: #4A90E2; font-weight: bold; font-size: 40px;">Pneumonia Detection</span>
+<div>
+  <span style="font-size: 20px;color: #6C63FF;">Upload X-ray Image</span>
+</div>
+
 </div>
 
   <div >
@@ -24,8 +38,8 @@
       </div>
     </div>
     <div class="container text-center mt-2">
-      <button (click)="onUpload()"type="submit" class="btn btn-primary" >
-        <i class="fas fa-upload">&nbsp;Upload</i>
+      <button (click)="onUpload()"type="submit" class="btn btn-secondary">
+        <em class="fas fa-upload">&nbsp;Upload</em>
       </button>
     </div>
 
