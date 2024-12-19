@@ -1,0 +1,59 @@
+
+<div class="container-fluid card login-container" *ngIf="!message" >
+<div class="d-flex align-items-center justify-content-center mt-3">
+  <img src="/assets/pneumonia-icon.png" alt="test" style="width: 200px; height: 150px;">
+</div>
+<div class="container text-center mt-2">
+  <h2>Upload X-ray Image</h2>
+</div>
+
+  <div >
+
+
+    <div class="col-6 container text-center">
+
+      <img class="rounded-1" width="30%" height="30%" [src]=" uploadedImage" alt="...">
+      <div class="mt-2">
+        <input
+          (change)="onFileSelected($event)"
+          class="form-control"
+          type="file"
+          id="formFile"
+          accept="image/*"
+        >
+      </div>
+    </div>
+    <div class="container text-center mt-2">
+      <button (click)="onUpload()"type="submit" class="btn btn-primary" >
+        <i class="fas fa-upload">&nbsp;Upload</i>
+      </button>
+    </div>
+
+
+</div>
+
+</div>
+
+<div *ngIf="message" class="container-fluid card login-container1 text-center  ">
+<i class="fas fa-location me-2"></i>Localized Image
+  <div class="mt-3">
+
+    <img class="rounded-1" width="30%" height="30%" [src]=" uploadedImage" alt="">
+
+  </div>
+  <div class="mt-5 container text-center alert"
+       [class.alert-success]="level==='success'"
+       [class.alert-danger]="level==='error'">
+    <p>{{ message }}</p>
+  </div>
+  <div class="container text-center">
+    <button (click)="resetMessage()" class="btn btn-secondary">
+      <em class="fas fa-add">&nbsp;</em>Add New XRay
+    </button>
+
+  </div>
+</div>
+
+
+
+
